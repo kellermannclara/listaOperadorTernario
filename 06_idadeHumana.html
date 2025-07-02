@@ -9,10 +9,19 @@
 
     //Entrada
 
+    const porteCahcoro = Number(prompt(`Informe o porte do ser cão`));
+    const idadeCao = Number(prompt(`Informe a idade do seu cachorro`));
 
     //Processamento
 
+    let idadeHumana; 
+    (porteCahcoro == `pequeno`) ? idadeHumana = idadeCao * 5 :
+    (porteCahcoro == "médio") ? idadeHumana = idadeCao * 6 :
+    (porteCahcoro == "grande") ? idadeHumana = idadeCao * 7 :
+    alert(`O porte do seu cão é inválido os unicos portes válidos para seu cão são grande, médio ou pequeno`);
     
     //Saída
+
+    alert(`A idade do seu cão convertida para humana fica ${idadeHumana}`);
 
 </script>

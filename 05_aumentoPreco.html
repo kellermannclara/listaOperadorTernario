@@ -9,10 +9,23 @@
     
     //Entrada
 
+    const precoInic = Number(prompt(`Informe o preço inicial do produto`));
 
     //Processamento
+    let aumento = 0;
+
+    (precoInic <= 280) ? aumento = (precoInic * 20) / 100 :
+    (precoInic <= 700) ? aumento = (precoInic * 15) / 100 :
+    (precoInic <= 1500) ? aumento = (precoInic * 10) / 100 :
+    (precoInic > 1500) ? aumento = (precoInic * 5 ) / 100 :
+    alert(`Valor inválido`);
+
+    const novoPreco = precoInic + aumento;
+
 
     
     //Saída
+
+    alert(`O novo preço após o aumento será de R$${novoPreco}`);
 
 </script>

@@ -11,9 +11,16 @@
 
     //Entrada
 
+    const nota = Number(prompt(`Informe sua nota`));
 
     //Processamento
+    let conceito = ``;
 
+    (nota >= 9.0 && nota <= 10.0) ? conceito = `A` :
+    (nota >= 8.0 && nota <= 8.9) ? conceito = `B` :
+    (nota >= 7.0 && nota <= 7.9) ? conceito = `C` :
+    (nota >= 6.0 && nota <= 6.9) ? conceito = `D` :
+    (nota >= 0 && nota <= 5.9) ? conceito = `E` :
     
     //Saída
 
