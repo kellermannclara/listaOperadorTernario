@@ -7,9 +7,15 @@
 
     //Entrada
 
+    const precoLitro = Number(prompt(`Informe o preço do litro do combustível`));
+    const litros = Number(prompt(`Informe a quantidade de litros usadas para se deslocar diarimente`));
+    const transporte = Number(prompt(`Informe o preço  do transporte público`));
 
     //Processamento
 
+    let somaLitros = (litros * precoLitro) * 2;
+    let transporteIdaVilta = transporte * 2;
+    (somaLitros > transporte) ? alert(`Vale mais a pena ir de transporte público. O preço ficará ${transporteIdaVilta}`) : alert(`Valerá mais a pena ir com carro. O preço será ${somaLitros}`);
     
     //Saída
 
