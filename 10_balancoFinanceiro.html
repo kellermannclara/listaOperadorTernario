@@ -11,9 +11,17 @@
 
     //Entrada
 
+    const salario = Number(prompt(`Informe seu salário mensal`));
+    const contaAgua = Number(prompt(`Informe o valor da conta de água`));
+    const contaLuz = Number(prompt(`Informe o valor da conta da energia elétrica`));
+    const contaTelefone = Number(prompt(`Informe o valor da conta de telefone`));
+    const contaMercado = Number(prompt(`Informe o valor da conta do supermercado`));
 
     //Processamento
 
+    let dinheiroRestante = salario - contaAgua - contaLuz - contaTelefone - contaMercado;
+    const resultadoNegativo = dinheiroRestante * -1;
+    (dinheiroRestante > 0) ? alert(`Sobrou R$${dinheiroRestante} após os pagamentos das contas`) : alert(`Faltou R$${resultadoNegativo} para poder pagar todas as contas`);
     
     //Saída
     

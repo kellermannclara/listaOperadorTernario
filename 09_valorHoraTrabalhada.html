@@ -10,11 +10,19 @@
     //Entrada
 
     const horas = Number(prompt(`Informe as horas trabalhadas semanalmente`));
-    const valorHora = Number(prompt(``))
+    const valorHora = Number(prompt(`Informe quando você recebe por hora trabalhada`));
 
     //Processamento
 
+    let porcentagem;
+    (horas <= 45) ? porcentagem = 0 : 
+    (horas <= 60) ? porcentagem = (valorHora * 20) / 100 : 
+    (horas > 60) ? porcentagem = (valorHora * 30) / 100 : alert(`Valor inválido`);
+    const salarioPorHora = valorHora + porcentagem;
+    const valorFinal = salarioPorHora * horas;
     
     //Saída
+
+    alert(`O saário final recebido será de R$${valorFinal} e o valor por hora será R$${salarioPorHora}`);
 
 </script>
